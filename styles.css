@@ -2,7 +2,7 @@ body {
   background-color: rgb(40, 43, 46);
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -10,106 +10,108 @@ h1 {
 }
 
 .button {
-     background-color: rgb(250,250,250);
-     text-decoration: none;
-     border: 2px solid seashell;
-     border-radius: 10px;
-     padding: 5%;
-     background-color: rgb(60, 63, 66);
-     width: 35em;
+  background-color: rgb(250, 250, 250);
+  text-decoration: none;
+  border: 2px solid seashell;
+  border-radius: 10px;
+  padding: 5%;
+  background-color: rgb(60, 63, 66);
+  width: 35em;
 
-     transition: 100ms;
-
+  transition: 100ms;
 }
 
 .smalltext {
-     color: rgb(200, 200, 200);
-     font-size: 0.8em;
+  color: rgb(200, 200, 200);
+  font-size: 0.8em;
 }
 
 .buttonContainer {
-     width: 100%;
-     height: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .topBar > * {
-     text-align: center;
-     display:inline;
+  text-align: center;
+  display: inline;
 }
 
 .topText > * {
-     display:inline;
+  display: inline;
 }
 
 .bignumber {
-     font-size: 2em;
+  font-size: 2em;
 }
 
 .button:active {
-     background-color: rgb(70, 73, 76);
+  background-color: rgb(70, 73, 76);
 }
 
 .noSelect {
-     -webkit-touch-callout: none;
-     -webkit-user-select: none;
-     -khtml-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
-     user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .timeButtonContainer {
-     width: 100%;
-     height: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeButton {
-     background-color: rgb(250,250,250);
-     text-decoration: none;
-     border: 2px solid seashell;
-     border-radius: 10px;
-     padding: 1%;
-     background-color: rgb(60, 63, 66);
-     width: 44em;
+  background-color: rgb(250, 250, 250);
+  text-decoration: none;
+  border: 2px solid seashell;
+  border-radius: 10px;
+  padding: 1%;
+  background-color: rgb(60, 63, 66);
+  width: 44em;
 
-     transition: 100ms;
-
+  transition: 100ms;
 }
 
 .tinytext {
-     font-size: 8px;
+  font-size: 8px;
 }
 
 #oneSecond {
-     background-color: rgb(69, 117, 138);
+  background-color: rgb(69, 117, 138);
 }
 
 #fiveSeconds {
-     background-color: rgb(139, 67, 67);
+  background-color: rgb(139, 67, 67);
 }
 
 #tenSeconds {
-     background-color: rgb(69, 117, 138);
+  background-color: rgb(69, 117, 138);
 }
 
 #fifteenSeconds {
-     background-color: rgb(69, 117, 138);
+  background-color: rgb(69, 117, 138);
 }
 
 #twentySeconds {
-     background-color: rgb(69, 117, 138);
+  background-color: rgb(69, 117, 138);
 }
 
 #thirtySeconds {
-     background-color: rgb(69, 117, 138);
+  background-color: rgb(69, 117, 138);
 }
 
 #sixtySeconds {
-     background-color: rgb(69, 117, 138);
+  background-color: rgb(69, 117, 138);
+}
+
+.timeButtonContainer:hover {
+     transform: scale(1.03);
 }
