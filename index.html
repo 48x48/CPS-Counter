@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html>
-     <head>
-          <meta charset="utf-8">
-          <title>CPS Counter</title>
-          <link rel="icon"  href="favicon.ico"/>
-          <link rel="stylesheet" href="styles.css">
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-     </head>
-     <body>
+  <head>
+    <meta charset="utf-8" />
+    <title>CPS Counter</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="topText">
+      <img src="favicon.ico" width="65px" />
+      <h2>&nbsp</h2>
+      <h1>CPS Counter</h1>
+    </div>
 
+    <div class="topBar">
+      <h2><span class="cpsdisplay bignumber">0.0</span>&nbspCPS</h2>
+      <h2>&nbsp&nbsp&nbsp</h2>
+      <h2>
+        <span class="timeremaining bignumber">0.00</span>&nbspSeconds elapsed
+      </h2>
+      <h2>&nbsp&nbsp&nbsp</h2>
+      <h2><span class="totalclicks bignumber">0</span>&nbspTotal Clicks</h2>
+    </div>
 
-          <div class="topText">
-               <img src="favicon.ico" width="65px">
-               <h2>&nbsp</h2>
-               <h1>CPS Counter</h1>
-          </div>
+    <div class="buttonContainer">
+      <div class="button noSelect">
+        <a id="textInButton"
+          >Spam-click here when you're ready!
+          <p class="smalltext">The timer will start on the first click.</p></a
+        >
+      </div>
+    </div>
 
-          <div class="topBar">
-               <h2><span class="cpsdisplay bignumber">0.0</span>&nbspCPS</h2>
-               <h2>&nbsp&nbsp&nbsp</h2>
-               <h2><span class="timeremaining bignumber">0.00</span>&nbspSeconds elapsed</h2>
-               <h2>&nbsp&nbsp&nbsp</h2>
-               <h2><span class="totalclicks bignumber">0</span>&nbspTotal Clicks</h2>
-          </div>
+    <div class="timingModeSelection">
+      <div class="noSelect tinytext">&nbsp</div>
+      <div class="timeButtonContainer">
+        <a id="oneSecond" class="noSelect timeButton">click for 1 second</a>
+      </div>
 
-          <div class="buttonContainer">
-               <div class="button noSelect">
-                    <a id="textInButton">Spam-click here when you're ready!<p class="smalltext">The timer will start on the first click.</p></a>
-               </div>
-          </div>
+      <div class="noSelect tinytext">&nbsp</div>
+      <div class="timeButtonContainer">
+        <a id="fiveSeconds" class="noSelect timeButton">click for 5 seconds</a>
+      </div>
 
-          <div class = "timingModeSelection">
-               <div class = "noSelect tinytext">&nbsp</div>
-               <div class = "timeButtonContainer">
-                    <a id="oneSecond" class = "noSelect timeButton">click for 1 second</a>
-               </div>
+      <div class="noSelect tinytext">&nbsp</div>
+      <div class="timeButtonContainer">
+        <a id="tenSeconds" class="noSelect timeButton">click for 10 seconds</a>
+      </div>
 
-               <div class = "noSelect tinytext">&nbsp</div>
-               <div class = "timeButtonContainer">
-                    <a id="fiveSeconds" class = "noSelect timeButton">click for 5 seconds</a>
-               </div>
+      <div class="noSelect tinytext">&nbsp</div>
+      <div class="timeButtonContainer">
+        <a id="fifteenSeconds" class="noSelect timeButton"
+          >click for 15 seconds</a
+        >
+      </div>
 
-               <div class = "noSelect tinytext">&nbsp</div>
-               <div class = "timeButtonContainer">
-                    <a id="tenSeconds" class = "noSelect timeButton">click for 10 seconds</a>
-               </div>
+      <div class="noSelect tinytext">&nbsp</div>
+      <div class="timeButtonContainer">
+        <a id="twentySeconds" class="noSelect timeButton"
+          >click for 20 seconds</a
+        >
+      </div>
 
-               <div class = "noSelect tinytext">&nbsp</div>
-               <div class = "timeButtonContainer">
-                    <a id="fifteenSeconds" class = "noSelect timeButton">click for 15 seconds</a>
-               </div>
+      <div class="noSelect tinytext">&nbsp</div>
+      <div class="timeButtonContainer">
+        <a id="thirtySeconds" class="noSelect timeButton"
+          >click for 30 seconds</a
+        >
+      </div>
 
-               <div class = "noSelect tinytext">&nbsp</div>
-               <div class = "timeButtonContainer">
-                    <a id="twentySeconds" class = "noSelect timeButton">click for 20 seconds</a>
-               </div>
+      <div class="noSelect tinytext">&nbsp</div>
+      <div class="timeButtonContainer">
+        <a id="sixtySeconds" class="noSelect timeButton"
+          >click for 60 seconds</a
+        >
+      </div>
+    </div>
 
-               <div class = "noSelect tinytext">&nbsp</div>
-               <div class = "timeButtonContainer">
-                    <a id="thirtySeconds" class = "noSelect timeButton">click for 30 seconds</a>
-               </div>
-
-               <div class = "noSelect tinytext">&nbsp</div>
-               <div class = "timeButtonContainer">
-                    <a id="sixtySeconds" class = "noSelect timeButton">click for 60 seconds</a>
-               </div>
-          </div>
-
-          <script src="app.js"></script>
-     </body>
+    <script src="app.js"></script>
+  </body>
 </html>
