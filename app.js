@@ -70,7 +70,7 @@ function updateTime() {
 function timeChange(num) {
      if (clicks === 0) {
           howLong = num;
-          selectedTime.style.backgroundColor = "rgb(69,117,138)";
+          selectedTime.style.backgroundColor = "rgb(69, 117, 138)";
           switch (num) {
                case 1:
                     selectedTime = oneSec;
@@ -95,6 +95,6 @@ function timeChange(num) {
                     break;
           }
 
-          selectedTime.style.backgroundColor = "rgb(119,167,188)";
+          selectedTime.style.backgroundColor = "rgb(139, 67, 67)";
      }
 }
