@@ -13,18 +13,39 @@ var done = false;
 const button = document.querySelector(".button");
 const textInButton = document.querySelector("#textInButton");
 
+// Time selector buttons
+const oneSec = document.querySelector("#oneSecond");
+const fiveSec = document.querySelector("#fiveSeconds");
+const tenSec = document.querySelector("#tenSeconds");
+const fifteenSec = document.querySelector("#fifteenSeconds");
+const twentySec = document.querySelector("#twentySeconds");
+const thirtySec = document.querySelector("#thirtySeconds");
+const sixtySec = document.querySelector("#sixtySeconds");
+
+var selectedTime = fiveSec;
+
+
+// Event listeners
 button.addEventListener("click", click);
+
+oneSec.addEventListener("click", function(){return timeChange(1)});
+fiveSec.addEventListener("click", function(){return timeChange(5)});
+tenSec.addEventListener("click", function(){return timeChange(10)});
+fifteenSec.addEventListener("click", function(){return timeChange(15)});
+twentySec.addEventListener("click", function(){return timeChange(20)});
+thirtySec.addEventListener("click", function(){return timeChange(30)});
+sixtySec.addEventListener("click", function(){return timeChange(60)});
 
 function click() {
 
      if (done === false)  {
-          if (clicks == 0) {
+          if (clicks === 0) {
                textInButton.style.opacity = "0";
                var thingTime = Date.now();
                startingTime = thingTime;
                updateTime()
           }
-          
+
           clicks++;
           totalClicks.innerHTML = clicks;
      }
@@ -43,5 +64,37 @@ function updateTime() {
      }
      else {
           setTimeout(updateTime, 10);
+     }
+}
+
+function timeChange(num) {
+     if (clicks === 0) {
+          howLong = num;
+          selectedTime.style.backgroundColor = "rgb(69,117,138)";
+          switch (num) {
+               case 1:
+                    selectedTime = oneSec;
+                    break;
+               case 5:
+                    selectedTime = fiveSec;
+                    break;
+               case 10:
+                    selectedTime = tenSec;
+                    break;
+               case 15:
+                    selectedTime = fifteenSec;
+                    break;
+               case 20:
+                    selectedTime = twentySec;
+                    break;
+               case 30:
+                    selectedTime = thirtySec;
+                    break;
+               case 60:
+                    selectedTime = sixtySec;
+                    break;
+          }
+
+          selectedTime.style.backgroundColor = "rgb(119,167,188)";
      }
 }
