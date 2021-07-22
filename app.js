@@ -2,8 +2,7 @@ var clicks = 0;
 var timeSeconds = 0;
 var cps = 0;
 var time = new Date();
-var currentTime = time.getTime()
-var howLong = 5;    // Change when buttons for setting time work
+var howLong = 5;
 const cpsDisplay = document.querySelector(".cpsdisplay");
 const timeElapsed = document.querySelector(".timeremaining");
 const totalClicks = document.querySelector(".totalclicks");
@@ -11,6 +10,7 @@ var startingTime = 0;
 var done = false;
 
 const button = document.querySelector(".button");
+const resetButton = document.querySelector(".resetButton");
 const textInButton = document.querySelector("#textInButton");
 
 // Time selector buttons
@@ -27,6 +27,8 @@ var selectedTime = fiveSec;
 
 // Event listeners
 button.addEventListener("click", click);
+
+resetButton.addEventListener("click", resetTime);
 
 oneSec.addEventListener("click", function(){return timeChange(1)});
 fiveSec.addEventListener("click", function(){return timeChange(5)});
@@ -97,4 +99,16 @@ function timeChange(num) {
 
           selectedTime.style.backgroundColor = "rgb(139, 67, 67)";
      }
+}
+
+function resetTime() {
+     //console.log("test");
+     //if (done === true) {
+          //console.log("test2")
+          //clicks = 0;
+          //timeSeconds = 0;
+          //cps = 0;
+          //startingTime = 0;
+          //var done = false;
+     //}
 }
