@@ -102,13 +102,16 @@ function timeChange(num) {
 }
 
 function resetTime() {
-     //console.log("test");
-     //if (done === true) {
-          //console.log("test2")
-          //clicks = 0;
-          //timeSeconds = 0;
-          //cps = 0;
-          //startingTime = 0;
-          //var done = false;
-     //}
+     if (done === true) {
+          clicks = 0;
+          timeSeconds = 0;
+          cps = 0;
+          startingTime = 0;
+          done = false;
+
+          timeElapsed.innerHTML = 0.00;
+          cpsDisplay.innerHTML = 0.0;
+          totalClicks.innerHTML = 0;
+          textInButton.style.opacity = "1";
+     }
 }
