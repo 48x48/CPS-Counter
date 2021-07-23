@@ -70,7 +70,7 @@ function updateTime() {
 }
 
 function timeChange(num) {
-     if (clicks === 0) {
+     if ((clicks === 0) || (done === true)) {
           howLong = num;
           selectedTime.style.backgroundColor = "rgb(69, 117, 138)";
           switch (num) {
