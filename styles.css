@@ -119,6 +119,12 @@ h1 {
      transform: scale(1.03);
 }
 
+.chartContainer {
+     width: 45%;
+     display: flex;
+     justify-self: center;
+     margin: 0 auto;
+}
 
 #oneSecond {
      background-color: rgb(69, 117, 138);
