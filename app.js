@@ -100,7 +100,7 @@ function click() {
       startingTime = thingTime;
       updateTime();
       startTimer();
-    } 
+    }
 
     clicks++;
     totalClicks.innerHTML = clicks;
@@ -174,6 +174,7 @@ function resetTime() {
 
     Chart.data.datasets[0].data = [];
     Chart.update();
+    cpsData = [];
   }
 }
 
